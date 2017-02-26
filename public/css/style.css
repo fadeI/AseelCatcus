@@ -218,39 +218,13 @@ a.boxclose{
 }
 .post-basic-info{
 	padding: 7% 7% 5% 7%;
-}
-.post-basic-info h3 a{
-	color: #717171;
-	font-size: 1.2em;
-	margin-bottom: 0.2em;
-	display: block;
-	transition:0.5s all;
-	-webkit-transition:0.5s all;
-	-moz-transition:0.5s all;
-	-o-transition:0.5s all;
-}
-.post-basic-info h3 a:hover{
-	color:#B9CB41;
-}
-.post-basic-info span a{
-	color:#ACAAAA;
-	font-size:0.9em;
-}
-.post-basic-info span a label{
-	height:12px;
-	width:12px;
-	display:inline-block;
-	background:url(../images/map-pin.png) no-repeat 0px 0px;
-	margin-right: 0.4em;
-	transition:0.5s all;
-	-webkit-transition:0.5s all;
-	-moz-transition:0.5s all;
-	-o-transition:0.5s all;
-}
-.post-basic-info span a:hover{
-	color:#B9CB41;
+	
 }
 
+.post-basic-info p{
+	padding: 7% 7% 5% 7%;
+	direction: rtl;
+}
 .aseel_data{
 	margin: 10px; 
 
