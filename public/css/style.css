@@ -192,8 +192,8 @@ a.boxclose{
 	vertical-align:middle;
 	
 }
-/*--//userinfo--*/
-/*----start-post-grids----*/
+
+
 .post-share span{
 	background:url(../images/facebook.png) no-repeat 0px 0px;
 	height:26px;
@@ -249,6 +249,18 @@ a.boxclose{
 }
 .post-basic-info span a:hover{
 	color:#B9CB41;
+}
+
+.aseel_data{
+	margin: 10px; 
+
+}
+.headData{
+	align-content :center ;
+	color: balck;
+	font-size: 50px;
+	
+
 }
 .post-basic-info p{
 	font-size: 0.875em;
