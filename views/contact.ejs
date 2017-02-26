@@ -2,13 +2,10 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Catcus </title>
+		<title>Catcus Website | Contact :: w3layouts</title>
 		<link href="css/style.css" rel='stylesheet' type='text/css' />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/x-icon" href="images/fav-icon.png" />
-		
-		
-		<a id='linkButton'>Show Message</a>
 		
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</script>
@@ -18,9 +15,6 @@
 		<!----//webfonts---->
 		<!---start-click-drop-down-menu----->
 		<script src="js/jquery.min.js"></script>
-		<script src="js/toastr.js"> </script>
-		
-		<link rel='stylesheet' src="css/toastr.css">
         <!----start-dropdown--->
          <script type="text/javascript">
 			var $ = jQuery.noConflict();
@@ -32,9 +26,7 @@
 					$('#box').animate({'top':'-700px'},500);
 					});
 				});
-			
 				$(document).ready(function(){
-					
 				//Hide (Collapse) the toggle containers on load
 				$(".toggle_container").hide(); 
 				//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
@@ -44,8 +36,8 @@
 				});
 									
 			});
-		});
 
+		</script>
         <!----//End-dropdown--->
 	</head>
 	<body>
@@ -123,7 +115,6 @@
 							    </div>
 								<div class="clear"></div>
 							 </div>
-							 <button id = "Test"> SSS</button>
 							 	<form method="post" action="contact">
 							          <div class="contact-form">
 										<div class="contact-to">
@@ -135,15 +126,12 @@
 						                   <textarea name= "message" value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
 						                </div>
 						               <span><input type="submit" class="" value="Submit"></span>
-									   
 						                <div class="clear"></div>
 						               </div>
 						           </form>
-								   <a id='linkButton'><%= message %> </a>
 								   <div><%= message %> </div>
 								</div>
 			</div>
 		</div>
 	</body>
 </html>
-
