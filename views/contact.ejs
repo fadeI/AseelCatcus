@@ -1,18 +1,13 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Catcus Website | Contact :: w3layouts</title>
+		<title>Catcus </title>
 		<link href="css/style.css" rel='stylesheet' type='text/css' />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/x-icon" href="images/fav-icon.png" />
-		<link href="toastr.css" rel="stylesheet"/>
-		<script src="toastr.js"></script>
+		
+		
 		<a id='linkButton'>Show Message</a>
 		
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -23,6 +18,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!----//webfonts---->
 		<!---start-click-drop-down-menu----->
 		<script src="js/jquery.min.js"></script>
+		<script src="js/toastr.js"> </script>
+		
+		<link rel='stylesheet' src="css/toastr.css">
         <!----start-dropdown--->
          <script type="text/javascript">
 			var $ = jQuery.noConflict();
@@ -34,7 +32,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					$('#box').animate({'top':'-700px'},500);
 					});
 				});
+			
 				$(document).ready(function(){
+					
 				//Hide (Collapse) the toggle containers on load
 				$(".toggle_container").hide(); 
 				//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
@@ -44,21 +44,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				});
 									
 			});
+		});
 
-			$(document).ready(function() {
-
-   				 // show when page load
-   				 toastr.info('Page Loaded!');
-
-  			  $('#linkButton').click(function() {
-    			   // show when the button is clicked
-    		   toastr.success('Click Button');
-
-  		  });
-
-});
-
-		</script>
         <!----//End-dropdown--->
 	</head>
 	<body>
@@ -136,6 +123,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							    </div>
 								<div class="clear"></div>
 							 </div>
+							 <button id = "Test"> SSS</button>
 							 	<form method="post" action="contact">
 							          <div class="contact-form">
 										<div class="contact-to">
@@ -147,19 +135,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						                   <textarea name= "message" value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
 						                </div>
 						               <span><input type="submit" class="" value="Submit"></span>
+									   
 						                <div class="clear"></div>
 						               </div>
 						           </form>
+								   <a id='linkButton'><%= message %> </a>
 								   <div><%= message %> </div>
 								</div>
 			</div>
 		</div>
-		<!----start-footer--->
-		<div class="footer">
-			<p>Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-		</div>
-		<!----//End-footer--->
-		<!---//End-wrap---->
 	</body>
 </html>
 

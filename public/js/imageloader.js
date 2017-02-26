@@ -1,5 +1,3 @@
-function getImageD1(){
-    var $= jQuery.noConflict();
-$('#1D').fancybox(); 
- 
-}
+$('#btn btn-primary').click(function(){
+	alert('dd');
+});
