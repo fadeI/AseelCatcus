@@ -2,11 +2,9 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Catcus Website | Contact :: w3layouts</title>
+		<title>Catcus Website | Contact</title>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/x-icon" href="images/fav-icon.png" />
-		
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</script>
 		<!----webfonts---->
@@ -16,6 +14,19 @@
 		<!---start-click-drop-down-menu----->
 		<script src="js/jquery.min.js"></script>
 		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+   		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!----start-dropdown--->
          <script type="text/javascript">
 			var $ = jQuery.noConflict();
@@ -55,9 +66,9 @@
 						 	<div class="form_content">
 								<div class="menu_box_list">
 									<ul>	
-									<li><a href="index"><span>home</span></a></li>
-									<li><a href="about"><span>About</span></a></li>
-									<li><a href="contact"><span>Contact</span></a></li>
+										<li><a href="index"><span>דף הבית </span></a></li>
+										<li><a href="about"><span>עלינו</span></a></li>
+										<li><a href="#"><span>צור קשר </span></a></li>
 										<div class="clear"> </div>
 									</ul>
 								</div>
@@ -126,12 +137,16 @@
 										<div class="text2">
 						                   <textarea name= "message" value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
 						                </div>
-						               <span><input type="submit" class="" value="Submit"></span>
-						                <div class="clear"></div>
+						               <span><input type="submit" class="" value="Submit"></span>        
 						               </div>
+									     <div>
+								   <%if (msg.length > 0) { %>
+								       <div class = "alert alert-danger"> <%= msg %> </div>
+										<% } %>
+									</div
 						           </form>
-								   <div><%= message %> </div>
-								</div>
+								 
+								
 			</div>
 		</div>
 	</body>

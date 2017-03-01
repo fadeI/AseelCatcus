@@ -27,11 +27,14 @@ app.get('/' , function(req, res){
   res.render('index');
 });
 
+app.get('/index', function(req,res){
+  res.render('index')
+})
 app.get('/about', function(req,res){
   res.render('about')
 })
 app.get('/contact', function(req,res){
-  res.render('contact', {message : ''});
+  res.render('contact', {msg : ''});
 });
 
 
@@ -57,10 +60,9 @@ app.post('/contact', function (req, res) {
   // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      res.render('contact',{message: "error"});
+      res.render('contact',{msg: 'Please check your input'});
     }else {
-    console.log('Message %s sent: %s', info.messageId, info.response);
-    res.render('contact',{message: "sucsses"});
+    res.redirect('index')
     }
    
   });
