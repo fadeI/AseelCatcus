@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
     <link href="css/style.css" rel='stylesheet' type='text/css' />
-    <script type="text/javascript">
-	$(document).ready(function() {
-		$(".fancybox").fancybox();
-	});
+	
+    <!-- Squad theme CSS -->
+    
+	
 </script>
 <head>
-<body>
+<body class="contactPage">
 <header>
      <div class="navbar navbar-default navbar-static-top">
         <div  class= "container">
@@ -28,7 +28,7 @@
                 <div class= "navbar-collapse navbarHeaderCollapse">
                     <ul class= "nav navbar-nav navbar-right">
                      <li class = "navbar" > <a href="#"> צור קשר </a></li>
-                    <li class = "navbar" > <a href="#"> מי אנחנו  </a></li>
+                    <li class = "navbar" > <a href="about"> מי אנחנו  </a></li>
                     <li class = "navbar "  > <a href="newIndex"> דף הבית  </a></li>
                    
                     </ul>
@@ -36,58 +36,120 @@
         </div>
     </div>
 </header>
-<div class = " container ">
-	<div class = "row equal">
-	<div class= 'col-md-4'>
-	<div class = "panel panel-primary ">
-		<ul class="list-unstyled">
-		<li><span>Address :</span></li>
-		<li><span class="glyphicon glyphicon-home"><span> Jaffa magical city 3/516,<br><span class = "postcode">post code 16955</span> </span></span></li>
-		</ul>
-	</div>
-	</div>
-	<div class= 'col-md-4'>
-	<div class = "panel panel-primary">
 
-		<ul class="list-unstyled">
-		<li><span>Phones:</span></li>
-		<li><span class="glyphicon glyphicon-phone">	0547340745</span></li>
-		<li><img src="images/fax.png" alt=""></span></li>
-		</ul>
-	</div>
-	</div>
-	<div class= 'col-md-4'>
-		<div class = "panel panel-primary">
-		<ul class="list-unstyled">
-		<li><span>Email:</span></li>
-		<li><img src="images/email.png" alt="">	aseelomari87@gmail.com</li>
-		</ul>
+
+  <div dir = "rtl" class="contact-us">
+  	<h1 dir = "rtl" class = " text-primary text-center">נהיה בקשר </h1>
+	  <div dir = "rtl" class="container">
+
+		<div dir = "rtl" class="row">
+			<div class="col-lg-2 col-lg-offset-5">
+				<hr class="primary-100">
+				
+			</div>
 		</div>
-	</div>
-	</div>
-	</div>
-	
-		<form >
-		<div class = " container form-group">
-			<panel  class = " col-md-4"> 
-			<label  for="name">  Name : </span>
-			<input  name= "name" type="text" placeholder = "name..."></span>
-			</panel>
-	<div class= "col-md-4"> 
-	<span>Email : </span>
-	<input   name = "Email" type ="text" placeholder = "email..."></span>
-	</div>
-	<div class= "col-md-4"> 
-	<span>Subject : </span>
-	<input  name = "subject" type ="text" placeholder="subject..."></span>
-	</div>
-		
-	 	<textarea placeholder ="message"  name = "message"> </textarea>
-	 
-	 </div>
-	</form>
-		
-	</div>
-</div
+       <div class="container">
+          <div class="contact-form">
+           <div class="row">
+               <div class="col-sm-7">                  
+                    <form   method="post" action="contact" role="form">
+                        <div class="messages" id="form-messages"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div  dir="rtl" class="form-group">
+                                        <label dir="rtl" for="form_name"> שם משפחה </label>
+                                        <input dir="rtl" id="form_name" type="text" name="name" class="form-control" placeholder="הכנס שם משפחה ">
+                                    </div>
+                                </div>
+                                <div dir="rtl" class="col-md-6">
+                                    <div class="form-group">
+                                        <label  dir="rtl" for="form_lastname">שם פרטי</label>
+                                        <input  dir="rtl"id="form_lastname" type="text" name="surname" class="form-control" placeholder="הכנס שם פרטי" > 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div dir="rtl" class="col-md-6">
+                                    <div class="form-group">
+                                        <label dir="rtl" for="form_email">מייאל</label>
+                                        <input dir="rtl" id="form_email" type="email" name="email" class="form-control" placeholder="הכנס כתובת מייאל ">
+                                    </div>
+                                </div>
+                                <div dir="rtl" class="col-md-6">
+                                    <div class="form-group">
+                                        <label dir="rtl" for="form_phone">מספר טלפון</label>
+                                        <input dir="rtl" id="form_phone" type="tel" name="phone"  class="form-control" placeholder="הכנס מספר טלפון">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div dir="rtl" class="col-md-12">
+                                    <div class="form-group">
+                                        <label dir="rtl for="form_message">הודעה </label>
+                                        <textarea dir="rtl id="form_message" name="message" class="form-control" placeholder="שלח לי הודעה " rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <div  dir="rtl" class="col-md-12">
+                                    <input type="submit" class="btn btn-primary" value="שלח הודעה">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div dir="rtl" class="col-md-12">
+                                   <br>
+                                    <small  dir="rtl" class="text-muted"> כל השדות חובה <strong>*</strong></small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+    
+               </div>
+               <div  dir="rtl"  class="col-sm-5">
+                   <div   dir="rtl"  class="row col1">
+                      
+                       <div dir="rtl" class="col-xs-9">
+					   יפיע , כפר החורש 
+					   </br>
+					   מיקוד 16955 , ת.ד. 3086 
+					   </div>
+					    <div dir="rtl" class="col-xs-3">
+                           <i dir="rtl" class="fa fa-map-marker" style="font-size:16px;"></i>   כתובת 
+                       </div>
+                   </div>
+                   
+                    <div dir="rtl"  class="row col1">
+						<div  dir="rtl"  class="col-sm-9">
+                             0547340745
+                        </div>
+                        <div dir="rtl"  class="col-sm-3">
+                            <i class="fa fa-phone"></i>  טלפון 
+                        </div>
+                        
+                    </div>
+                    <div  dir="rtl" class="row col1">
+                        <div dir="rtl" class="col-sm-9">
+                              123 123 4567
+                        </div>
+						<div dir="rtl" class="col-sm-3">
+                             <i dir="rtl" class="fa fa-fax"></i>    פקס  
+                        </div>
+                    </div>
+                    <div  dir="rtl" class="row col1">
+                       
+                        <div  dir="rtl" class="col-sm-9">
+                             <a href="mailto:aseelOmari87@gmail.com">aseelOmari87@gmail.com</a>
+                        </div>
+						 <div  dir="rtl" class="col-sm-3">
+                            <i dir="rtl" class="fa fa-envelope"></i>   מייאל 
+                        </div>
+                    </div><br>
+                   
+               </div>
+           </div>
+           
+          </div>
+       </div>
+
 </body>
 </html>

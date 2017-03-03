@@ -28,7 +28,7 @@ app.get('/' , function(req, res){
 });
 
 app.get('/newIndex', function(req,res){
-  res.render('newIndex')
+  res.render('newindex')
 })
 app.get('/about', function(req,res){
   res.render('about')
@@ -60,9 +60,10 @@ app.post('/contact', function (req, res) {
   // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
+      console.log(error);
       res.render('contact',{msg: 'Please check your input'});
     }else {
-    res.redirect('index')
+    res.redirect('/')
     }
    
   });
