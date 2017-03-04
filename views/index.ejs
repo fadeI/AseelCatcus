@@ -1,222 +1,124 @@
-	<!DOCTYPE HTML>
 <html>
 <head>
-		<title>Amazing Qatcus</title>
-		<link href="css/style.css" rel='stylesheet' type='text/css' />
-		<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/x-icon" href="images/fav-icon.png" />
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		</script>
-		<!----webfonts---->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-		<!----//webfonts---->
-		<!-- Global CSS for the page and tiles -->
-  		<link rel="stylesheet" href="css/main.css">
-  		<!-- //Global CSS for the page and tiles -->
-		<!---start-click-drop-down-menu----->
-		<script src="js/jquery.min.js"></script>
-		<!-- Add jQuery library -->
-		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-		<!-- Add mousewheel plugin (this is optional) -->
-		<script type="text/javascript" src="fancybox/lib/jquery.mousewheel.pack.js"></script>
-
-		<!-- Add fancyBox -->
-		<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
-		<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
-
-		<!-- Optionally add helpers - button, thumbnail and/or media -->
-		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-    	
-		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-
-
-	<script type="text/javascript">
-		$(document).ready(function() {
+    <title>Amazing catcus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    
+    <script type="text/javascript">
+	$(document).ready(function() {
 		$(".fancybox").fancybox();
 	});
 </script>
-        <!----start-dropdown--->
-         <script type="text/javascript">
-			var $ = jQuery.noConflict();
-				$(function() {
-					$('#activator').click(function(){
-						$('#box').animate({'top':'0px'},500);
-					});
-					$('#boxclose').click(function(){
-					$('#box').animate({'top':'-700px'},500);
-					});
-				});
-				$(document).ready(function(){
-				//Hide (Collapse) the toggle containers on load
-				$(".toggle_container").hide(); 
-				//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
-				$(".trigger").click(function(){
-					$(this).toggleClass("active").next().slideToggle("slow");
-						return false; //Prevent the browser jump to the link anchor
-				});
-									
-			});
-		</script>
-	</head>
-	<body>
-		<!---start-wrap---->
-			<!---start-header---->
-			<div class="header">
-				<div class="wrap">
-				<div class=" logo">
-					<a href="index"><img src="images/flowerphoto/logo.ico"  /></a>
-				</div>
-				<div class="nav-icon">
-					 <a href="#" class="right_bt" id="activator"><span> </span> </a>
-				</div>
-				 <div class="box" id="box">
-					 <div class="box_content">        					                         
-						<div class="box_content_center">
-						 	<div class="form_content">
-								<div class="menu_box_list">
-									<ul>
-										<li><a href="#"><span>דף הבית </span></a></li>
-										<li><a href="about"><span>עלינו</span></a></li>
-										<li><a href="contact"><span>צור קשר </span></a></li>
-										<div class="clear"> </div>
-									</ul>
-								</div>
-								<a class="boxclose" id="boxclose"> <span> </span></a>
-							</div>                                  
-						</div> 	
-					</div> 
-				</div>       	  
-				<div class="top-searchbar">
-					<form>
-						<input type="text" /><input type="submit" value="" />
-					</form>
-				</div>
-				<div class="clear"> </div>
-			</div>
-		</div>
-		<!---//End-header---->
-		<!---start-content---->
-		<div class="content">
-		
-			<div class="wrap">
-			
-			 <div id="main" role="main">
-			 <div dir= "rtl" >עיצוב פרחים וקטטוס </div>
-			 <div dir= "rtl"  style="font-family:adler-w26-regular,cursive;"> עכדגכדגכדגכדגכדגכדגכדגי</div>
-			      <ul id="tiles">
-			        <li >
-					<a class="fancybox" href="images/flowerphoto/1d.jpeg" data-fancybox-group="gallery" >
-					<img  src="images/flowerphoto/1d.jpeg" /></a>
-			        </li>
-					<li>
-					 <a class="fancybox" href="images/flowerphoto/2t.jpg" data-fancybox-group="gallery">
-					 <img  src="images/flowerphoto/2t.jpg" /></a>
-			        </li>
-					<li>
-					 <a class="fancybox" href="images/flowerphoto/2r.jpg" data-fancybox-group="gallery">
-					 <img  src="images/flowerphoto/2r.jpg" /></a>
-			        </li>
-					<li>
-					 <a class="fancybox" href="images/flowerphoto/2d.jpg" data-fancybox-group="gallery">
-					 <img  src="images/flowerphoto/2d.jpg" /></a>
-			        </li>
-					<li>
-					 <a class="fancybox" href="images/flowerphoto/2z.jpg" data-fancybox-group="gallery">
-					 <img  src="images/flowerphoto/2z.jpg" /></a>
-			        </li>
-					<li>
-					 <a class="fancybox" href="images/flowerphoto/3x.jpg" data-fancybox-group="gallery">
-					 <img  src="images/flowerphoto/3x.jpg" /></a>
-			        </li>
-			        <li>
-					<a class="fancybox" href="images/flowerphoto/1a.jpg" data-fancybox-group="gallery">
-					<img  src="images/flowerphoto/1a.jpg" /></a>
-					</li>
-			        <li>
-					<a class="fancybox" href="images/flowerphoto/1h.jpg" data-fancybox-group="gallery" >
-					<img  src="images/flowerphoto/1h.jpg" /></a>
-					</li>
-			        <li>
-					<a class="fancybox" href="images/flowerphoto/1b.jpeg" data-fancybox-group="gallery">
-					<img  src="images/flowerphoto/1b.jpeg" /></a>
-			        </li>
-			        <li >
-				    <a class="fancybox" href="images/flowerphoto/1c.jpeg" data-fancybox-group="gallery">
-					<img  src="images/flowerphoto/1c.jpeg" /></a>
-			        </li>
-			        <li>
-					<a class="fancybox" href="images/flowerphoto/1e.jpeg" data-fancybox-group="gallery">
-					<img  src="images/flowerphoto/1e.jpeg" /></a>
-			        </li>
-			        <li>
-						<a class="fancybox" href="images/flowerphoto/1g.jpg" data-fancybox-group="gallery">
-						<img  src="images/flowerphoto/1g.jpg" /></a>
-			        </li>
-					  <li>
-					  	<a class="fancybox" href="images/flowerphoto/1l.jpg" data-fancybox-group="gallery">
-						  <img  src="images/flowerphoto/1l.jpg" /></a>
-			        </li> 
-			         <li >
-					 <a class="fancybox" href="images/flowerphoto/1r.jpg" data-fancybox-group="gallery">
-					 <img  src="images/flowerphoto/1r.jpg" /></a>
-			        </li>
-					<li>
-					 <a class="fancybox" href="images/flowerphoto/2a.jpg" data-fancybox-group="gallery">
-					 <img  src="images/flowerphoto/2a.jpg" /></a>
-			        </li>
-                    <li>
-					 <a class="fancybox" href="images/flowerphoto/2b.jpg" data-fancybox-group="gallery">
-					 <img  src="images/flowerphoto/2b.jpg" /></a>
-			        </li>
-					<li>
-					 <a class="fancybox" href="images/flowerphoto/2c.jpg" data-fancybox-group="gallery">
-					 <img  src="images/flowerphoto/2c.jpg" /></a>
-			        </li>
-			        
-			      </ul>
-			    </div>
-			</div>
-		</div>
-		<!---//End-content---->
-		<!----wookmark-scripts---->
-		  <script src="js/jquery.imagesloaded.js"></script>
-		  <script src="js/jquery.wookmark.js"></script>
-		  <script type="text/javascript">
-		    (function ($){
-		      var $tiles = $('#tiles'),
-		          $handler = $('li', $tiles),
-		          $main = $('#main'),
-		          $window = $(window),
-		          $document = $(document),
-		          options = {
-		            autoResize: true, // This will auto-update the layout when the browser window is resized.
-		            container: $main, // Optional, used for some extra CSS styling
-		            offset: 20, // Optional, the distance between grid items
-		            itemWidth:280 // Optional, the width of a grid item
-		          };
-		      /**
-		       * Reinitializes the wookmark handler after all images have loaded
-		       */
-		      function applyLayout() {
-		        $tiles.imagesLoaded(function() {
-		          // Destroy the old handler
-		          if ($handler.wookmarkInstance) {
-		            $handler.wookmarkInstance.clear();
-		          }
-		
-		          // Create a new layout handler.
-		          $handler = $('li', $tiles);
-		          $handler.wookmark(options);
-		        });
-		      }
-		      // Call the layout function for the first time
-		      applyLayout();
-		    })(jQuery);
-		  </script>
-	</body>
-</html>
+<head>
+<body>
+<header>
+     <div class="navbar navbar-default navbar-static-top">
+        <div  class= "container">
+                <a href="#" class="navbar-brand"><img src = "images/flowerphoto/logo.ico"></a>
+                <button class= "navbar-toggle" data-toggle = "collapse" data-target=".navbarHeaderCollapse" >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <div class= "navbar-collapse navbarHeaderCollapse">
+                    <ul class= "nav navbar-nav navbar-right">
+                     <li class = "navbar" > <a href="contact"> צור קשר </a></li>
+                    <li class = "navbar" > <a href="about"> מי אנחנו  </a></li>
+                    <li class = "navbar "  > <a href="#"> דף הבית  </a></li>
+                   
+                    </ul>
+                </div>
+        </div>
+    </div>
+    
+</header>
 
+<div class="container">
+        <div class= "col-md-4">
+		<a class="fancybox" href="images/flowerphoto/1d.jpeg" data-fancybox-group="gallery" >
+		<img  class="img-thumbnail img-responsive "  src="images/flowerphoto/1d.jpeg" /></a>
+		</div>
+		<div class= "col-md-4">
+		<a class="fancybox" href="images/flowerphoto/2t.jpg" data-fancybox-group="gallery">
+		<img  class="img-thumbnail img-responsive " src="images/flowerphoto/2t.jpg"  /></a>
+        </div>
+		<div class= "col-md-4">
+		<a class="fancybox" href="images/flowerphoto/2r.jpg" data-fancybox-group="gallery">
+		<img  class="img-thumbnail img-responsive "  src="images/flowerphoto/2r.jpg"  /></a>
+		</div>
+        <div class= "col-md-4">
+         <a class="fancybox" href="images/flowerphoto/2d.jpg" data-fancybox-group="gallery">
+		<img class="img-thumbnail img-responsive " src="images/flowerphoto/2d.jpg"  /></a>
+        </div>
+        <div class= "col-md-4">
+		<a class="fancybox" href="images/flowerphoto/2z.jpg" data-fancybox-group="gallery">
+		<img   class="img-thumbnail img-responsive " src="images/flowerphoto/2z.jpg" /></a>
+		</div>
+        <div class= "col-md-4">
+		<a class="fancybox" href="images/flowerphoto/3x.jpg" data-fancybox-group="gallery">
+		<img  class="img-thumbnail img-responsive " src="images/flowerphoto/3x.jpg" /></a>
+        </div>
+        <div class= "col-md-4">
+		<a class="fancybox" href="images/flowerphoto/1a.jpg" data-fancybox-group="gallery">
+		<img  class="img-thumbnail img-responsive " src="images/flowerphoto/1a.jpg" /></a>
+        </div>
+        <div class= "col-md-4">
+		<a class="fancybox" href="images/flowerphoto/1h.jpg" data-fancybox-group="gallery" >
+	    <img class="img-thumbnail img-responsive " src="images/flowerphoto/1h.jpg" /></a>
+        </div>
+        <div class= "col-md-4">
+		<a class="fancybox" href="images/flowerphoto/1b.jpeg" data-fancybox-group="gallery">
+		<img class="img-thumbnail img-responsive " src="images/flowerphoto/1b.jpeg" /></a>
+		</div>
+        <div class= "col-md-4">
+		<a class="fancybox" href="images/flowerphoto/1c.jpeg" data-fancybox-group="gallery">
+		<img  class="img-thumbnail img-responsive " src="images/flowerphoto/1c.jpeg" /></a>
+        </div>
+        <div class= "col-md-4">
+		<a class="fancybox" href="images/flowerphoto/1e.jpeg" data-fancybox-group="gallery">
+		<img class="img-thumbnail img-responsive "src="images/flowerphoto/1e.jpeg" /></a>
+		</div>
+        <div class= "col-md-4">
+          <a class="fancybox" href="images/flowerphoto/1g.jpg" data-fancybox-group="gallery">
+		 <img class="img-thumbnail img-responsive " src="images/flowerphoto/1g.jpg" /></a>
+		</div>
+        <div class= "col-md-4">
+		    <a class="fancybox" href="images/flowerphoto/1l.jpg" data-fancybox-group="gallery">
+			<img class="img-thumbnail img-responsive " src="images/flowerphoto/1l.jpg" /></a>
+		</div> 
+        <div class= "col-md-4">
+        <a class="fancybox" href="images/flowerphoto/1r.jpg" data-fancybox-group="gallery">
+		<img class="img-thumbnail img-responsive " src="images/flowerphoto/1r.jpg" /></a>
+		</div>
+        <div class= "col-md-4">
+        <a class="fancybox" href="images/flowerphoto/2a.jpg" data-fancybox-group="gallery">
+		 <img class="img-thumbnail img-responsive " src="images/flowerphoto/2a.jpg" /></a>
+		</div>
+        <div class= "col-md-4">
+		<a class="fancybox" href="images/flowerphoto/2b.jpg" data-fancybox-group="gallery">
+		<img  class="img-thumbnail img-responsive " src="images/flowerphoto/2b.jpg" /></a>
+        </div>
+        <div class= "col-md-4">
+		 <a class="fancybox" href="images/flowerphoto/2c.jpg" data-fancybox-group="gallery">
+		<img class="img-thumbnail img-responsive " src="images/flowerphoto/2c.jpg" /></a>
+        </div>
+			        
+</div>
+	
+
+
+</body>
+
+</html>
