@@ -9,8 +9,7 @@ var session = require('express-session');
 
 
 var app = express();
-var port = 3000;
-
+var port = process.env.PORT || 8000
 app.use(express.static(path.join(__dirname, 'public')))
 //app.use(express.static(path.join(__dirname, 'views')))
 app.set('view engine', 'ejs');
@@ -69,6 +68,6 @@ app.post('/contact', function (req, res) {
   });
 });
 
-app.listen(port, function (err) {
-  console.log('\tlisten to server at port ' + port)
+app.listen(port, function() {
+    console.log("App is running on port " + port);
 });
