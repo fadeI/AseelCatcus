@@ -23,11 +23,11 @@ app.use(session({
  
 app.use(flash());
 app.get('/' , function(req, res){
-  res.render('newIndex');
+  res.render('index');
 });
 
-app.get('/newIndex', function(req,res){
-  res.render('newindex')
+app.get('/index', function(req,res){
+  res.render('index')
 })
 app.get('/about', function(req,res){
   res.render('about')
