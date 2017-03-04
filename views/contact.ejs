@@ -58,7 +58,7 @@
                         <div dir ="rtl"  class="controls">
                             <div  dir ="rtl"  class="row">
                             <div dir="rtl" class="col-md-6">
-                            
+
                                     <div class="form-group">
                                         <label  dir="rtl" for="form_lastname">שם פרטי</label>
                                         <input  dir="rtl"id="form_lastname" type="text" name="surname" class="form-control" placeholder="הכנס שם פרטי" > 
@@ -103,9 +103,15 @@
                                     <small  dir="rtl" class="text-muted"> כל השדות חובה <strong>*</strong></small>
                                 </div>
                             </div>
+
                         </div>
 
                     </form>
+                    <div>
+					 <%if (msg.length > 0) { %>
+					 <div dir ="rtl" class = "col-md-3 alert alert-danger"> כתוב כתובת מייל נכונה </div>
+						<% } %>
+					</div
     
                </div>
                <div  dir="rtl"  class="col-sm-5">
