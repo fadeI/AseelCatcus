@@ -58,16 +58,15 @@
                         <div dir ="rtl"  class="controls">
                             <div  dir ="rtl"  class="row">
                             <div dir="rtl" class="col-md-6">
-
                                     <div class="form-group">
                                         <label  dir="rtl" for="form_lastname">שם פרטי</label>
-                                        <input  dir="rtl"id="form_lastname" type="text" name="surname" class="form-control" placeholder="הכנס שם פרטי" > 
+                                        <input  dir="rtl" type="text" name="surname" class="form-control" placeholder="הכנס שם פרטי" > 
                                     </div>
                                 </div>
                                 <div dir="rtl" class="col-md-6">
                                     <div  dir="rtl" class="form-group">
                                         <label dir="rtl" for="form_name"> שם משפחה </label>
-                                        <input dir="rtl" id="form_name" type="text" name="name" class="form-control" placeholder="הכנס שם משפחה ">
+                                        <input dir="rtl" type="text" name="name" class="form-control" placeholder="הכנס שם משפחה ">
                                     </div>
                                 </div>
                                 
@@ -76,7 +75,7 @@
                                 <div dir="rtl" class="col-md-6">
                                     <div class="form-group">
                                         <label dir="rtl" for="form_email">מייל </label>
-                                        <input dir="rtl" id="form_email" type="email" name="email" class="form-control" placeholder="הכנס כתובת מייל ">
+                                        <input dir="rtl"  type="text" name="email" class="form-control" placeholder="הכנס כתובת מייל ">
                                     </div>
                                 </div>
                                 <div dir="rtl" class="col-md-6">
@@ -105,13 +104,14 @@
                             </div>
 
                         </div>
-
-                    </form>
-                    <div>
+                    <div dir ="rtl">
 					 <%if (msg.length > 0) { %>
-					 <div dir ="rtl" class = "col-md-3 alert alert-danger"> כתוב כתובת מייל נכונה </div>
+					 <div dir ="rtl" class = " alert alert-danger"> כתוב כתובת מייל נכונה </div>
 						<% } %>
 					</div
+
+                    </form>
+                 
     
                </div>
                <div  dir="rtl"  class="col-sm-5">

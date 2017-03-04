@@ -21,7 +21,7 @@ app.use(session({
   cookie: { maxAge: 60000 }
 }));
  
-app.use(flash());
+
 app.get('/' , function(req, res){
   res.render('index');
 });
@@ -51,6 +51,7 @@ app.post('/contact', function (req, res) {
     from: 'aseelomari87@gmail.com',
     to: req.body.email, 
     subject: req.body.subject, 
+    phone : req.body.phone,
     text: req.body.message 
     
   };
@@ -58,8 +59,9 @@ app.post('/contact', function (req, res) {
 
   // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
+    
     if (error) {
-      console.log(error);
+      
       res.render('contact',{msg: 'Please check your input'});
     }else {
     res.redirect('/')
